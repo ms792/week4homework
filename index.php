@@ -52,8 +52,40 @@ echo "last_two_char : $last_two_char <br>";
 list($month, $day, $year) = split('[/.-]', $date);
 echo "words : $month $day $year <br>";
 
+
+
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
+
+echo "<br>";
+
+echo "Leap year processing results(foreach) : ";
+foreach($year as $val) {
+        switch($val%4 == 0 ) {
+              case 0:
+                 echo "TRUE ";
+              break;
+              default:
+                 echo "FALSE";
+        }
+       echo " ";
+}
+echo "<br>";
+
+echo "Leap year processing results (for) : ";
+for($i=0;$i<sizeof($year);$i++) {
+        switch($year[$i]%4 == 0 ) { 
+                case 0:
+	                echo "TRUE ";
+                break;
+                default:        
+	                echo "FALSE";
+        }
+	echo " ";
+}
+echo "<br>";
 print_r($year)
+
 
 ?>
