@@ -46,6 +46,9 @@ echo "string_length : $string_length <br>";
 $ascii_value = ord($date);
 echo "ascii_value : $ascii_value <br>";
 
+$last_two_char = substr($date, strlen($date)-2, strlen($date));
+echo "last_two_char : $last_two_char <br>";
+
 
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
