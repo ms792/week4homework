@@ -36,6 +36,9 @@ for ($i = 0; $i<strlen($date) && $pos!== false ;$i++) {
     
 } 
 
+$word_count = str_word_count($date);
+echo "word count : $word_count <br>";
+
 
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
