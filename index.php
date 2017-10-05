@@ -14,6 +14,29 @@ else {
 	echo "oops<br>";
 }
 
+$searchString = "/";
+
+$pos1 = stripos($date, $searchString, 0);
+
+$pos2 = stripos($date, $searchString, $pos1+1);
+
+echo "pos1 = $pos1<br>";
+echo "pos2 = $pos2<br>";
+
+
+ $pos=0;
+for ($i = 0; $i<strlen($date) && $pos!== false ;$i++) {
+    echo "The number is: $i <br>";
+    if($i == 0)
+    	$pos = stripos($date, $searchString, $pos);
+    else
+    	$pos = stripos($date, $searchString, $pos+1);
+    echo "found: $pos <br>";
+    $value = empty($pos);
+    
+} 
+
+
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
 print_r($year)
