@@ -43,6 +43,9 @@ echo "word count : $word_count <br>";
 $string_length = strlen($date);
 echo "string_length : $string_length <br>";
 
+$ascii_value = ord($date);
+echo "ascii_value : $ascii_value <br>";
+
 
 $year = array("2012", "396", "300","2000", "1100", "1089");
 echo "The value of \$year: ";
